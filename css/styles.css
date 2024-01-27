@@ -5,12 +5,15 @@
     margin: -1px;
     border: 0;
     padding: 0;
-    
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+img {
+    display: block;
+}
+
 
 body {
 font-family: "Roboto", sans-serif;
@@ -101,6 +104,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #2e2f42;
+padding: 24px 0;
 }
 
 .adress-change-list {
@@ -133,6 +137,7 @@ color: #2E2F42;
 }
 
 .main-section-button {
+display: block;
 font-family: "Roboto", sans-serif;
 color: #ffffff;
 font-size: 16px;
@@ -145,6 +150,8 @@ border-radius: 4px;
 background: #4D5AE5;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 padding: 16px 32px;
+margin: 0 auto;
+min-width: 169px;
 }
 
 
@@ -160,13 +167,14 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
-width: calc((100% - 96px) / 4);
+width: calc((100% - 72px) / 4);
 }
 
 .effective-solution {
 background: #2E2F42;
 height: 600px;
 flex-shrink: 0;
+padding: 188px 0;
 }
 
 .section-heading-style {
@@ -177,16 +185,16 @@ font-size: 56px;
 font-style: normal;
 line-height: 1.07; 
 letter-spacing: 1.12px;
-width: 496px;
+max-width: 496px;
 height: 120px;
-padding-top: 188px;
-padding-bottom: 292px;
 margin: 0 auto;
 display: block;
-
-
+margin-bottom: 48px;
 }
 
+.second-section-parameters {
+padding: 120px 0;
+}
 
 .second-section-header {
     font-weight: 500;
@@ -209,7 +217,7 @@ line-height: 1.2;
 letter-spacing: 0.02em; 
 max-width: 264px;
 height: auto;
-padding-top: 120px;
+margin-bottom: 8px;
 }
 
 
@@ -220,7 +228,6 @@ letter-spacing: 0.02em;
 color: #434455; 
 max-width: 264px;
 height: auto;
-padding-bottom: 120px;
 }
 
 h3 {
@@ -253,20 +260,20 @@ letter-spacing: 0.32px;
 
 .our-team-section {
  background-color: #F4F4FD;
-  height: 732px;
- flex-shrink: 0;
+height: 732px;
+flex-shrink: 0;
+padding: 120px 0 
 }
 
 .our-team {
     display: flex;
-    gap: 32px;
+    gap: 24px;
 }
 
 .our-team-name {
 font-size: 36px;
 line-height: 1.11;
 text-align: center;
-padding-top: 120px;
 margin-left: 0 auto;
 margin-bottom: 72px;
 }
@@ -274,7 +281,11 @@ margin-bottom: 72px;
 .our-team-members {
 background-color: #FFFFFF;
 flex-basis: calc((100% - 96px) / 4 );
+border-radius: 0px 0px 4px 4px;
 
+}
+.our-team-card {
+padding: 32px 0;
 }
 
 .our-team-description {
@@ -283,7 +294,6 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
 text-align: center;
-padding-bottom:32px;
 }
 
 .our-team-people {
@@ -292,28 +302,34 @@ padding-bottom:32px;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    padding-top: 32px;
     margin-bottom: 8px;
     text-align: center;
 }
 .our-portfolio {
     background-color: #FFF;
+    padding-top: 120px; padding-bottom: 120px;
 }
 
 .our-portfolio-section {
 display: flex;
 flex-wrap: wrap;
-gap: 48px 21px;
-flex-basis: calc((100% - 48px) / 3 );
+column-gap: 24px;
+row-gap: 48px ;
 }
 
 .portfolio-item {
-border: 1px solid #E7E9FC;
+width: calc((100% - 48px) / 3);
 
 }
 
 .portfolio-img {
 margin-bottom: 32px;
+}
+
+.our-portfolio-description {
+padding: 32px 16px;
+border: 1px solid #e7e9fc;
+border-top: none;
 }
 
 .our-portfolio-paragraph {
@@ -324,8 +340,6 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.32px;
-padding-left: 16px;
-padding-bottom: 32px;
 }
 
 .portfolio-list-name {
@@ -335,7 +349,6 @@ font-style: normal;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
-padding-left: 16px;
 margin-bottom: 8px; 
 }
 
@@ -349,14 +362,13 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: #2e2f42; 
-padding-top: 120px;
 margin-bottom: 72px;
 }
 
 .footer-custom {
 background: #2E2F42;
 height: 312px;
-margin-top: 120px;
+padding: 100px 0;
 }
 
 .web-word-footer {
@@ -368,7 +380,9 @@ font-weight: 700;
 line-height: 1.17; 
 letter-spacing: 0.03em;
 text-transform: uppercase;
-    }
+display: inline-block; 
+margin-bottom: 16px;
+}
 
 .word-studio-footer {
 color:#F4F4FD;
@@ -378,7 +392,8 @@ font-style: normal;
 line-height: 1.16; 
 letter-spacing: 0.54px;
 text-transform: uppercase;
-
+display: inline-block; 
+margin-bottom: 16px;
 }
 
 .footer-text-color {
@@ -390,8 +405,6 @@ line-height: 1.5;
 letter-spacing: 0.32px;
 width: 264px;
 height: 72px;
-padding-top: 140px;
-padding-bottom: 100px;
 display: block;
 }
 
